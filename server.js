@@ -44,6 +44,10 @@ app.get("/api/getUsers", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Atlas Backend is running ✅");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
